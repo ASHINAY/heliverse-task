@@ -11,9 +11,9 @@ function HomePage() {
                 </div>
 
             </div>
-            <div>
+            
                 <input style={{ display: 'flex', marginLeft: '20px', marginTop: '40px', width: '80%', height: '30%' }} type="text" placeholder='Search Name....'></input>
-            </div>
+            
         </div>
 
 
