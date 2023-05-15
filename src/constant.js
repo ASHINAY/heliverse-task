@@ -9997,6 +9997,8 @@ export const employeeData = [{
     "avatar": "https://robohash.org/sequiquiabeatae.png?size=50x50&set=set1",
     "domain": "Business Development",
     "available": true
+    
 }
-
 ]
+export const myName = "Ashi"
+export const appName="Heliverse"

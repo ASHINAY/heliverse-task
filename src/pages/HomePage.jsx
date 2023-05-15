@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { employeeData } from '../constant';
+import { employeeData, myName,appName } from '../constant';
 import Pagination from '@mui/material/Pagination';
 
 function HomePage() {
@@ -13,15 +13,17 @@ function HomePage() {
   const [name, setName] = useState("")
 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 20;
 
   const totalPages = Math.ceil(employeeDataList.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
+  
   const currentEmployees = employeeDataList.slice(startIndex, endIndex);
-
+  
   const handlePageChange = (event, value) => setCurrentPage(value);
-
+console.log(myName);
+console.log(appName);
   useEffect(() => {
     let tempData = employeeData.filter((item) =>
       (selectedDomain === "All" || item.domain === selectedDomain) &&
@@ -50,7 +52,7 @@ function HomePage() {
         style={{
           display: 'flex', justifyContent: 'flex-start', alignItems: "center", background: '#D25380',
         }}>
-        <span style={{ color: 'white', fontWeight: 'bold', fontSize: "22px", marginLeft: "20px", padding: "20px 0px" }}>Heliverse Task</span>
+        <span style={{ color: 'white', fontWeight: 'bold', fontSize: "22px", marginLeft: "20px", padding: "20px 0px" }}>{appName}</span>
       </div>
 
       <div style={{ width: "100%", margin: "0px 10px" }}>
