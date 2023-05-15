@@ -10002,3 +10002,4 @@ export const employeeData = [{
 ]
 export const myName = "Ashi"
 export const appName="Heliverse"
+export const itemsPerPage = 20;

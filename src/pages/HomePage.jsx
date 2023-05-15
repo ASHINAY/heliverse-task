@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { employeeData, myName,appName } from '../constant';
+import { employeeData, myName,appName,itemsPerPage } from '../constant';
 import Pagination from '@mui/material/Pagination';
 
 function HomePage() {
@@ -13,7 +13,7 @@ function HomePage() {
   const [name, setName] = useState("")
 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 20;
+  // const itemsPerPage = 20;
 
   const totalPages = Math.ceil(employeeDataList.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
