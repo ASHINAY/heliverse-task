@@ -10001,5 +10001,5 @@ export const employeeData = [{
 }
 ]
 export const myName = "Ashi"
-export const appName="Heliverse"
+export const appName="Employee Details"
 export const itemsPerPage = 20;
